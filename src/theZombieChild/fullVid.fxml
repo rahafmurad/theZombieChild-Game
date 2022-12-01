@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="865.0" style="-fx-background-color: WHEAT;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="theZombieChild.VideoController">
+   <children>
+      <ImageView fitHeight="657.0" fitWidth="865.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="next" layoutX="713.0" layoutY="499.0" mnemonicParsing="false" onAction="#PicPuzzle" prefHeight="36.0" prefWidth="74.0" style="-fx-background-color: WHEAT;" text="Next">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="700.0" layoutX="74.0" layoutY="62.0" />
+      <HBox layoutX="316.0" layoutY="467.0" prefHeight="36.0" prefWidth="204.0">
+         <children>
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetMedia" prefHeight="24" prefWidth="30" style="-fx-background-color: WHEAT;">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/repeat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#playMedia" prefHeight="24" prefWidth="30" style="-fx-background-color: WHEAT;">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/play-button-arrowhead.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="24" prefWidth="30" style="-fx-background-color: WHEAT;">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/pause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="865.0" style="-fx-background-color: WHEAT;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="657.0" fitWidth="865.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="202.0" fitWidth="515.0" layoutX="190.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/child.png" />
+         </image>
+         <effect>
+            <Glow level="0.43" />
+         </effect>
+      </ImageView>
+      <VBox layoutX="102.0" layoutY="333.0" prefHeight="174.0" prefWidth="661.0">
+         <children>
+            <Text fill="WHEAT" strokeType="OUTSIDE" strokeWidth="0.0" text="Thanks for completing the story" textAlignment="CENTER" wrappingWidth="655.0000039339066">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="38.0" />
+               </font>
+            </Text>
+            <Text fill="WHEAT" strokeType="OUTSIDE" strokeWidth="0.0" text="hopefully you liked it like we did!" textAlignment="CENTER" wrappingWidth="640.0000039339066">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="38.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

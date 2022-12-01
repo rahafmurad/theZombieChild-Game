@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="865.0" style="-fx-background-color: WHEAT;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="theZombieChild.MCController">
+   <children>
+      <ImageView fitHeight="657.0" fitWidth="865.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHEAT" layoutX="68.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory Card Puzzle" wrappingWidth="339.51904296875">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+         </font>
+      </Text>
+      <HBox layoutX="631.0" layoutY="499.0" prefHeight="38.0" prefWidth="158.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#DragThePig" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: WHEAT;" text="Back">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="next" disable="true" mnemonicParsing="false" onAction="#Ending" prefHeight="36.0" prefWidth="74.0" style="-fx-background-color: WHEAT;" text="Next">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="145.0" layoutY="109.0" prefHeight="325.0" prefWidth="586.0">
+         <children>
+            <HBox prefHeight="167.0" prefWidth="639.0">
+               <children>
+                  <Button fx:id="button0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button2" layoutX="235.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="164.0" prefWidth="639.0">
+               <children>
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button5" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button6" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="150.0" prefWidth="130.0" style="-fx-background-color: WHEAT; -fx-border-color: black;" text="!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="326.0" layoutY="48.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: WHEAT;">
+         <children>
+            <Label fx:id="score1" text="Score:">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="score">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

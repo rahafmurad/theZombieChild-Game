@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+
+AnchorPane{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+Button{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+text{
+    font-family: 'Readex Pro', sans-serif;
+
+}
